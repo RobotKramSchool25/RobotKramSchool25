@@ -1,0 +1,439 @@
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0px;
+	margin-top: -1rem;
+	background: url(../images/headerBackground.jpg) no-repeat;
+	background-size: cover;
+}
+
+header {
+    max-width: 1256px;
+    margin: auto;
+    height: auto;
+    background-size: cover;
+    padding: 0 0 0rem 0;
+}
+
+.mainWidth {
+    position: relative;
+	width: 100%;
+	max-width: 1256px;
+	margin: auto;
+	height: 3rem;
+	z-index: 1;
+	background: whitesmoke;
+	padding: 0rem 0 3rem 0;
+}
+
+.mainWidth:after {
+	display: block;
+	content: " ";
+	clear: both;
+}
+.mainImg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+    height: 40.5rem;
+	width: 40.1rem;
+}
+
+.logo {
+	float: none; /* обтекания нет */
+    box-sizing: border-box;/*Свойства width и height включают в себя значения полей и границ, но не отступов (margin).*/
+	height: 40.5rem;
+	width: 80.1rem;
+	background: url("../images/IMG_4.jpg");
+    background-size: cover; /* Масштабирует изображение с сохранением пропорций ширина или высота равнялась ширине или высоте блока*/
+    z-index: 3;
+    margin-left: 200px;
+    border: 1px dotted #ccc; /*параметры границы толщина тип линии цвет*/
+}
+
+nav {
+		float: right;
+        display: table;
+		background: none;
+		height: auto;
+		border-radius: none;
+		margin: auto;
+		position: relative;
+		left: 0rem;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0;
+		left: 4rem;
+}
+.nav {
+	position: relative;
+    z-index: 2;
+	right: 13rem;
+	font: 3rem/4rem TimesNewRoman;
+	list-style: none;
+	display: table-row;
+	margin: auto;
+	max-width: 1256px;
+}
+
+.nav li {
+    background: whitesmoke;
+	display: table-cell;
+	height: auto;
+}
+
+.nav li a {
+    display: block;
+	color: #662974;
+	text-align: center;
+	padding: 0 0.5rem;
+	background: none;
+	border: none;
+	border-radius: 0px;
+	text-transform: uppercase;
+	position: relative;
+	font: 2.5rem/7rem TimesNewRoman;
+	width: auto;
+	left: -4rem;
+}
+	
+.nav li a:hover {
+	color: white;
+	background: gold;
+	
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.connect a {
+    font: 3rem TimesNewRoman;
+	text-transform: uppercase;
+	text-align: center;
+	color: #662974;
+}
+
+.backgroundMain {
+	width: 100%;
+	height: auto;
+    border: 3px dotted #ccc; /*параметры границы толщина тип линии цвет*/
+}
+
+main {
+    max-width: 1256px;
+    margin: auto;
+	padding: 1rem 0 0 0;
+	background: white;
+}
+
+main:after {
+	display: block;
+	content: " ";
+	clear: both;
+}
+main h1 {
+	padding: 1rem 1rem 0;
+	text-align: center;
+	font: 3.5rem TimesNewRoman;
+	color:  #662974;
+}
+
+.indexFirstP {
+	padding: 0 2rem 0; /* отступы сверху снизу нет, справа слева 2*/
+	font: 3rem TimesNewRoman;
+	text-indent: 3rem; /* отступ первой строки */
+}
+.spis ul {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  font-size: 18pt;
+  }
+.spis li {
+  counter-increment: my-awesome-counter;
+  margin: 0.25rem;
+  font-size: 16pt;
+  padding: 0 20rem 0; /* отступы сверху снизу нет, справа слева 20*/
+}
+.spis li:before {
+  content: counter(my-awesome-counter);
+  background: #662974;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.gallery {
+  display:flex;
+  padding: 10px; /* поля вокруг обєкта*/
+  border: 1px dotted #ccc; /*параметры границы толщина тип линии цвет*/
+  float:right; 
+  font:18pt TimesNewRoman;
+  text-indent: 3rem; /*Единица rem задаёт размер относительно размера шрифта элемента <html>*/
+  text-align: justify; /*по ширине*/
+}
+
+.gallery img:hover { /* при наведении мыши на фото*/
+    border: 5px outset lightblue;
+}
+
+.gallery img {
+  position: static;
+  margin: 5px;
+  top: 100px;
+  width: 400px;
+  border: 5px outset silver;
+  float: left;
+  /*box-sizing: border-box;*/
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px outset silver;
+    display: block
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.slickMain{
+    padding: 5rem 0 0 0;
+	width: 50%;
+	height: auto;
+	margin: auto;
+}
+
+.slick-prev{
+	position: absolute;
+	top: 50%;
+	left: -200rem;
+	z-index: 2;
+}
+.slick-prev:before{
+	display: block;
+	content: " ";
+	height: 4rem;
+	width: 5rem;
+	position: relative;
+	right: -200rem;
+	background: url(../images/leftArrow.png);
+	z-index: 2;
+}
+
+.slick-next {
+	position: absolute;
+	top: 50%;
+	right: 280rem;
+	z-index: 2;
+}
+
+.slick-next:before{
+	display: block;
+	content: " ";
+	height: 4rem;
+	width: 5rem;
+	position: relative;
+	right: -280rem;
+	background: url(../images/rightArrow.png);
+	z-index: 2;
+}
+
+.connect {
+	font: 3rem TimesNewRoman;
+	text-transform: uppercase;
+	text-align: center;
+	color: #00a9ff;
+	padding: 0 0 2rem 0;
+	margin: 0 0 2rem 0;
+}
+
+form {
+	text-align: center;
+}
+
+form input, form textarea {
+	border: 1px solid grey;
+	border-radius: 6px;
+	height: 4rem;
+	width: calc(100% - 4rem);
+	padding-left: 1rem;
+	margin: 0 0 2rem 0;
+}
+
+textarea {
+	min-height: 8rem;
+	max-height: 15rem;
+}
+
+.submit {
+	font: 3rem TimesNewRoman;
+	padding: 0.5rem 4rem;
+	text-transform: uppercase;
+	border: 1px solid #ff7612;
+	border-radius: 6px;
+	color: white;
+	background: #ff7612;
+}
+
+.footerDiv {
+	text-align: center;
+}
+.contactsInfo {
+	/*width: 70%;*/
+	margin: auto;/*отцентрировать блочный элемент по горизонтали*/
+}
+
+.contactsInfo ul {
+	list-style: none;
+	font: 1.8rem TimesNewRoman;
+}
+
+.contactsInfo ul li{
+	position: relative;
+	padding: 0 0 1rem 0;
+}
+.contactsInfo ul li:before {
+	display: block;
+	content: " ";	
+	height: 5rem;
+	width: 5rem;
+	position: absolute;
+	left: -4rem;
+	top: 0.5rem;
+}
+
+.adress:before {
+	background: url(../images/spritesheet2.png) left no-repeat;
+	background-position: -11px -20px;
+}
+
+.phone:before{
+	background: url(../images/spritesheet2.png) left no-repeat;
+	background-position: -140px -20px;
+}
+
+.mail:before{
+	background: url(../images/spritesheet2.png) left no-repeat;
+	background-position: -75px -23px;
+}
+
+.socialLincs li a{
+	position: relative;
+	left: calc(50% - 45px);
+}
+
+footer {
+	margin: auto; /* центрирование блока*/
+}
+
+.footerMain {
+	max-width: 1256px;
+    max-height: 200px;
+	margin: auto;
+}
+
+.footerDiv p {
+	text-transform: uppercase;
+	font: 3.5rem TimesNewRoman;
+	padding: 1rem 0 0 1rem;
+	color: #662974;
+}
+
+.footerDiv ul {
+	list-style: none;
+	padding: 0rem;
+}
+
+.footerDiv ul li a{
+	font: 3rem TimesNewRoman;
+	text-transform: uppercase;
+	color: #662974;
+}
+
+.social {
+	display: block;
+	float: left;
+	height: 5rem;
+	width: 5rem;
+	margin: 0.2rem;
+	background: url(../images/spritesheet.png) grey;
+	background-position: -10px -70px;
+}
+
+.footerDiv:after {
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+.fb {
+	background-position: -4px -8px;
+}
+	
+.footerMain {
+		height:50rem;
+		background: white;
+}
+
+form {
+		max-width: 768px;
+		margin: auto;
+}
+	
+.contacts {
+		width: 70%;
+		float: left;
+	    padding: 10rem 0 0 0;
+	    color: black;
+		box-sizing: border-box;
+}
+	
+.contactsInfo {
+		box-sizing: border-box;
+		width: 30%;
+		position: relative;
+		top: 17rem;
+		float: right;
+}
+		
+.submit:hover {
+	    border: 1px solid #ff7612;
+	    color: #ff7612;
+	    background: white;
+}
+.hoverable li a:hover {
+	    background: #ff7612;
+		padding: 0 2rem;
+}
+	
+.footerDiv {
+		box-sizing: border-box;
+		float: left;
+		width: 33%;
+}
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
